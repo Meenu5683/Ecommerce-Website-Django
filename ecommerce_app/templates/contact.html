@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+           <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/8c4b7840cb.js" crossorigin="anonymous"></script>
+
+    <style>
+.navbar{
+background-color:#fcfcff;
+}
+#a {
+    background: linear-gradient(to top, #66ccff 0%, #ffffff 100%);
+    height:500px;
+    width:100%;
+}
+#c{
+height:150px;
+width:250px;
+align:center;
+margin-left:200px;
+margin-top:50px;
+}
+#b{
+height:150px;
+width:250px;
+align:center;
+margin-left:210px;
+margin-top:50px;
+}
+
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: red;
+   color: white;
+   text-align: center;
+}
+a{
+text-decoration:none;
+}
+a:hover{
+text-decoration:underline black;
+}
+
+.row{
+margin-left:100px;
+}
+</style>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark shadow-5-strong " >
+  <div class="container-fluid" >
+    <h1 class="navbar-brand"  style="color:	black; font-family:Times New Roman">ELECTRO ZONE</h1>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation" style="color:	black">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav">
+          <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="http://127.0.0.1:8000" style="color:	black">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="http://127.0.0.1:8000/about/" style="color:	black">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="http://127.0.0.1:8000/contact/"style="color:	black">Contact</a>
+        </li>
+        <li class="nav-item dropdown ">
+          <a class="nav-link active dropdown-toggle" href="" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color:black">
+            Login
+          </a>
+          <ul class="dropdown-menu dropdown-menu" aria-labelledby="navbarDropdownMenuLink" >
+            <li><a class="dropdown-item" href="http://127.0.0.1:8000/shoplogin/" style="color:	black">Shop Login</a></li>
+            <li><a class="dropdown-item" href="http://127.0.0.1:8000/userlogin/" style="color:	black">User Login</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<center>
+<div class="pt-5" id="a" style=" text-align :center;" class="centered ">
+  <p class="pt-5">Get to know us</p>
+  <h5 style="font-size:50px">Have any project in mind?</h5>
+  <h5 style="font-size:50px">Let's talk</h5>
+
+<div class="row w-75 ">
+    <div class="card shadow-lg" id="c">
+      <div class="card-body">
+        <a  href="contact"><h5 style="color:black; " class="card-title">Contact</h5></a>
+        <p class="card-text">location@website.com</p>
+        <i class="fa-solid fa-phone fa-2x"></i>
+      </div>
+     </div>
+
+     <div class="card shadow-lg " id="b">
+      <div class="card-body ">
+        <a  href="location"><h5 style="color:black ; " class="card-title">Location</h5></a>
+        <p class="card-text">88 New South Head Rd, New York</p>
+        <i class="fa-solid fa-location-dot fa-2x"></i>
+      </div>
+    </div>
+
+    </div>
+
+</div>
+ </center>
+{% include "footer.html" %}
+</body>
+</html>

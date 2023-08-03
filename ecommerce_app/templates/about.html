@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/8c4b7840cb.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+<style>
+.navbar{
+background-color:#fcfcff;
+}
+img {
+  opacity: 0.5;
+height: 540px;
+  width: 100%;
+}
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.container {
+  position: relative;
+  text-align: center;
+  text-shadow: 2px 2px 6px black;
+}
+#d{
+text-shadow: 2px 2px 4px #000000;
+}
+.card{
+margin-left:220px;
+align:center;
+height:150px;
+width:200px;
+}
+
+.card:hover{
+ transform: scale(1.5,1.5);
+}
+
+  </style>
+    <title>Title</title>
+</head>
+
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark shadow-5-strong " >
+  <div class="container-fluid" >
+    <a class="navbar-brand" href="#" style="color:	black; font-family:Times New Roman">ELECTRO ZONE</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation" style="color:	black">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="http://127.0.0.1:8000" style="color:	black">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="http://127.0.0.1:8000/about/" style="color:	black">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="http://127.0.0.1:8000/contact/"style="color:	black">Contact</a>
+        </li>
+        <li class="nav-item dropdown ">
+          <a class="nav-link active dropdown-toggle" href="" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color:black">
+            Login
+          </a>
+          <ul class="dropdown-menu dropdown-menu" aria-labelledby="navbarDropdownMenuLink" >
+            <li><a class="dropdown-item" href="http://127.0.0.1:8000/shoplogin/" style="color:	black">Shop Login</a></li>
+            <li><a class="dropdown-item" href="http://127.0.0.1:8000/userlogin/" style="color:	black">User Login</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<div class="container-fluid pb-5">
+
+  <img src="https://img.freepik.com/free-photo/modern-stationary-collection-arrangement_23-2149309649.jpg"  >
+  <div style="color:white ; font-size:50px; text-align :center;" class="centered " id="d">Welcome to ELECTROZONE</div>
+  </div>
+<center>
+<div class="row pt-5 ">
+  <div class="col-sm-3 pt-5">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">10k+</h5>
+        <p class="card-text">Listed products</p>
+        <a><i class="fa-solid fa-tag fa-2x"></i></a>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-3 pt-5">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">5k+</h5>
+        <p class="card-text">Happy customers</p>
+        <i class="fa-solid fa-face-smile fa-2x"></i>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-3 pt-5">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">24hr</h5>
+        <p class="card-text">Customer support</p>
+        <i class="fa-solid fa-phone fa-2x"></i>
+      </div>
+    </div>
+  </div>
+</div>
+  </center>
+{% include "footer.html" %}
+
+</body>
+</html>

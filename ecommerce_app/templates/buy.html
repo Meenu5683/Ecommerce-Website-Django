@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script src="https://kit.fontawesome.com/8c4b7840cb.js" crossorigin="anonymous"></script>
+
+    <style>
+        body{
+        background-color:white;
+        }
+        #f{
+        width:500px;
+        margin-left:420px;
+        background-color:#A9A9A9;
+        padding-left:50px;
+        padding-right:50px;
+        padding-top:50px;
+        padding-bottom:40px;
+        margin-top:50px;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="f">
+<form method="post">{% csrf_token %}
+<label>Item name</label>
+  <input class="form-control" type="text" name="name" value="{{a.name}}" readonly><br><br>
+  <label>Item price</label>
+    <input type="number" class="form-control" name="price" value="{{a.price}}" readonly><br><br>
+<label>Quantity</label>
+    <input type="number" class="form-control" name="quantity"><br><br>
+<input type="submit" class="btn btn-warning" value="Pay amount">
+    </form>
+    </div>
+
+</body>
+</html>
+
+
+
+

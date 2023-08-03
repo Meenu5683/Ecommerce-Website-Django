@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script src="https://kit.fontawesome.com/8c4b7840cb.js" crossorigin="anonymous"></script>
+  <style>
+
+    body{
+    background-color:#ffe866;
+    }
+    #a,#b,#c{
+    margin-left:50px;
+    margin-right:100px;
+    margin-top:10px;
+    height:100px;
+    width:600px;
+    background-color:#B0B0B0;
+    }
+    #d,#e,#f{
+    color:white;
+    border-radius:60px 0px 0px 60px ;
+    background-color:#ffb200;
+    }
+    #a:hover{
+    background-color:#E8E8E8;
+    }
+    #b:hover{
+    background-color:#E8E8E8;
+    }
+    #c:hover{
+    background-color:#E8E8E8;
+    }
+    #a{
+    margin-top:80px
+    }
+    i{
+    color:white;
+    margin-top:30px;
+    }
+    #g{
+    margin-top:20px
+    }
+    .navbar{
+    background-color:#484848;
+    }
+    h1{
+    font-size: 60px;
+    }
+   #c{
+    margin-bottom:100px;
+    }
+  </style>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark shadow-5-strong " >
+  <div class="container-fluid" >
+    <a class="navbar-brand"  style="color:	#DCDCDC font-family:Times New Roman">ELECTRO ZONE</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation" style="color:	#808080">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="http://127.0.0.1:8000" style="color:#DCDCDC">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="http://127.0.0.1:8000/about/" style="color:	#DCDCDC">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="http://127.0.0.1:8000/contact/"style="color:	#DCDCDC">Contact</a>
+        </li>
+        <li class="nav-item dropdown ">
+          <a class="nav-link active dropdown-toggle" href="" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color:#DCDCDC">
+            Login
+          </a>
+          <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDropdownMenuLink" >
+            <li><a class="dropdown-item" href="http://127.0.0.1:8000/shoplogin/" style="color:	#DCDCDC">Shop Login</a></li>
+            <li><a class="dropdown-item" href="http://127.0.0.1:8000/userlogin/" style="color:	#DCDCDC">User Login</a></li>
+          </ul>
+        </li>
+         <li class="nav-item">
+          <a class="nav-link active" href="http://127.0.0.1:8000/loshop/"style="color:	#DCDCDC">Logout</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<center>
+<h1 class="mt-5" style="font-family:Times New Roman ">Welcome {{user}} !</h1>
+<p>{{email}}</p>
+</center>
+<center>
+  <a href="http://127.0.0.1:8000/addproduct/" class="text-decoration-none">
+<div class="row shadow rounded-pill  " id="a">
+  <div class="col-2 bg-secondary " id="d"><i class="fa-sharp fa-solid fa-plus fa-2x"></i></div>
+  <div class="col-10 mt-2 pt-4" style="Color:#606060; font-size:130%;">Add products</div>
+</div></a>
+    <a href="http://127.0.0.1:8000/viewproduct/" class="text-decoration-none">
+<div class="row shadow rounded-pill "id="b" >
+  <div class="col-2 bg-secondary "id="e"><i class="fa-solid fa-eye fa-2x"></i></div>
+  <div class="col-10 mt-2 pt-4" style="Color:#606060; font-size:130%;">View products</div>
+</div></a>
+  <a href="http://127.0.0.1:8000/editshop/{{id}}" class="text-decoration-none">
+<div class="row shadow rounded-pill " id="c">
+  <div class="col-2 bg-secondary"id="f"><i class="fa-solid fa-user-pen fa-2x"></i></div>
+  <div class="col-10 mt-2 pt-4 " style="Color:#606060; font-size:130%;">Edit profile</div>
+</div></a>
+  </center>
+<a></a>
+{% include "footer.html" %}
+
+</body>
+</html>
